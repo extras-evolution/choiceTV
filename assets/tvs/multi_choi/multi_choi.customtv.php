@@ -48,8 +48,7 @@ function inpChange'.$field_id.'(inp){
     var val = document.getElementById(inp).value;
     var out = document.getElementById("out_'.$field_id.'");
     if(val != ""){        
-        out.innerHTML = out.innerHTML + "<input checked=\"checked\" type=\"checkbox\" value=\""+ val +"\" id=\"tv'.$field_id.'_" + ii + "\" name=\"tv'.$field_id.'[]\" onchange=\"documentDirty=true;\"/><label for=\"tv'.$field_id.'_" + ii + "\">" + val + "</label>
-";
+        out.innerHTML = out.innerHTML + "<input checked=\"checked\" type=\"checkbox\" value=\""+ val +"\" id=\"tv'.$field_id.'_" + ii + "\" name=\"tv'.$field_id.'[]\" onchange=\"documentDirty=true;\"/><label for=\"tv'.$field_id.'_" + ii + "\">" + val + "</label>";
     }
     document.getElementById(inp).value = "";
     return false;
